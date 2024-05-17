@@ -1,0 +1,29 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+trigger: none
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - leagues
+    exclude:
+    - develop
+  always: true
+stages:
+  - stage: RunAutomatedTests
+    displayName: Run Automated Tests
+    jobs:
+      - job: RunAutomatedTests
+        timeoutInMinutes: 360
+        pool:
+          vmImage: windows-latest
+        steps:
+        - task: ScreenResolutionUtility@1 
+          inputs:
+           displaySettings: 'specific'
+           width: '1920'
+           height: '1080'   
+        - template: automatedTests.yml

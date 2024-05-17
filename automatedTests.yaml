@@ -1,0 +1,18 @@
+steps:
+- script:  
+   mvn -Dmaven.test.failure.ignore=true -Denvironment="$(env)" -Drunxml="$(suitexml)" surefire-report:report exec:java -Dexec.mainClass="mail.ZipAndSendMail"
+  displayName: Run tests
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Artifact: AutomationReports'
+  inputs:
+    artifact: AutomationReports
+    path: $(System.DefaultWorkingDirectory)//reports1
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    
+- script: mkdir AutomationReports
+  displayName: mkdir
+- script: ls $(System.DefaultWorkingDirectory)//reports1
+  displayName : list
