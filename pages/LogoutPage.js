@@ -15,7 +15,7 @@ exports.LogoutPage = class LogoutPage {
         await this.logout.click();
         await this.page.waitForTimeout(1000);
         const Label = await this.page.locator(this.label).textContent();
-        console.log("This is testdata details RTLABEl - ", testData.details.rtLabel);
+      
         expect(Label).toBe(testData.details.rtLabel);
 
 
