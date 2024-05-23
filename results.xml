@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="23.605649999999997">
+<testsuite name="Pomtest.spec.js" timestamp="2024-05-23T14:41:28.991Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.519" errors="0">
+<testcase name="Pom test" classname="Pomtest.spec.js" time="8.519">
+<system-out>
+<![CDATA[Rajitha
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

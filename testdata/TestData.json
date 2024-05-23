@@ -6,6 +6,10 @@
     },
     "details": {
         "rtLabel": "Riktam Technologies",
-        "tigersheetLabel": "Tigersheet"
+        "share": "Share",
+        "tigersheetLabel": "Tigersheet",
+        "timesheet": "timesheet",
+        "timesheetForm": "TimesheetForm - New EntryHide fieldsFilterGroupSortColorHeightBulk Email",
+        "addWidget": "Add Widget"
     }
 }
