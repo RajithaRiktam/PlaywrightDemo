@@ -1,8 +1,14 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="23.605649999999997">
-<testsuite name="Pomtest.spec.js" timestamp="2024-05-23T14:41:28.991Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.519" errors="0">
-<testcase name="Pom test" classname="Pomtest.spec.js" time="8.519">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="28.343494">
+<testsuite name="readenvfile.spec.js" timestamp="2024-05-24T08:51:09.829Z" hostname="chromium" tests="2" failures="0" skipped="0" time="25.289" errors="0">
+<testcase name="using csv file - 1" classname="readenvfile.spec.js" time="13.461">
 <system-out>
-<![CDATA[Rajitha
+<![CDATA[URL is - https://riktam.tigersheet.com/
+]]>
+</system-out>
+</testcase>
+<testcase name="using csv file - 2" classname="readenvfile.spec.js" time="11.828">
+<system-out>
+<![CDATA[URL is - https://riktam.tigersheet.com/
 ]]>
 </system-out>
 </testcase>
