@@ -1,16 +1,14 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="28.343494">
-<testsuite name="readenvfile.spec.js" timestamp="2024-05-24T08:51:09.829Z" hostname="chromium" tests="2" failures="0" skipped="0" time="25.289" errors="0">
-<testcase name="using csv file - 1" classname="readenvfile.spec.js" time="13.461">
-<system-out>
-<![CDATA[URL is - https://riktam.tigersheet.com/
-]]>
-</system-out>
+<testsuites id="" name="" tests="2" failures="0" skipped="1" errors="0" time="21.975831000000003">
+<testsuite name="LeaveBalance.spec.js" timestamp="2024-05-28T16:00:01.704Z" hostname="chromium" tests="2" failures="0" skipped="1" time="19.309" errors="0">
+<testcase name="test" classname="LeaveBalance.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
-<testcase name="using csv file - 2" classname="readenvfile.spec.js" time="11.828">
-<system-out>
-<![CDATA[URL is - https://riktam.tigersheet.com/
-]]>
-</system-out>
+<testcase name="Check Leave balance" classname="LeaveBalance.spec.js" time="19.309">
 </testcase>
 </testsuite>
 </testsuites>
